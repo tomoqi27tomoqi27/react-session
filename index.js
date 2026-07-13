@@ -63,28 +63,28 @@
  * アロー関数
  */
 // 従来の関数
-function func1(str) {
-  return str;
-}
-// constでfunc1の中に関数を入れることもできる
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("func1です"));
+// function func1(str) {
+//   return str;
+// }
+// // constでfunc1の中に関数を入れることもできる
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("func1です"));
 
-// // アロー関数
-const func2 = (str) => {
-  return str;
-};
-// 引数が一つの場合は()を省略できる
-const func2 = str => {
-  return str;
-};
-console.log(func2("func2です"));
+// // // アロー関数
+// const func2 = (str) => {
+//   return str;
+// };
+// // 引数が一つの場合は()を省略できる
+// const func2 = str => {
+//   return str;
+// };
+// console.log(func2("func2です"));
 
-// 処理が一行の場合はreturnを省略できる
-const func2 = (str) => str;
-console.log(func2("func2です"));
+// // 処理が一行の場合はreturnを省略できる
+// const func2 = (str) => str;
+// console.log(func2("func2です"));
 
 /**
  * 分割代入
