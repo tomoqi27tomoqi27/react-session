@@ -157,14 +157,46 @@
 // sumFunc(...arr1); 
 
 // まとめる
-const arr2 = [1, 2, 3, 4, 5];
-const [num1, num2, ...arr3] = arr2;
-console.log(num1);
-console.log(num2);
-console.log(arr3);
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
 
-// 配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
-const arr6 = [...arr4, ...arr5];
-console.log(arr6);
+// // 配列のコピー、結合
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+// const arr6 = [...arr4, ...arr5];
+// console.log(arr6);
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+
+// // for文を使った方法
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(`${index + 1}番目は${nameArr[index]}です。`);
+// }
+
+// mapを使った方法
+// const nameArr = ["田中", "山田", "じゃけぇ"];
+// nameArr.map((name) => {
+//   console.log(name);
+// });
+// console.log(nameArr2);
+
+// mapの引数にindexを入れると、配列の番号も取得できる
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+
+// // filterを使った方法
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr); 
+
+const nameArr = ["田中", "山田", "じゃけぇ"];
+const nameArr2 = nameArr.map((name, index) => {
+  return index<2 ? name : `${name}さん` 
+});
+console.log(nameArr2);
