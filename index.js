@@ -201,3 +201,5 @@ const nameArr2 = nameArr.map((name, index) => {
 });
 console.log(nameArr2);
 //mac-editing
+
+//ニャーん
