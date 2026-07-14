@@ -200,3 +200,4 @@ const nameArr2 = nameArr.map((name, index) => {
   return index<2 ? name : `${name}さん` 
 });
 console.log(nameArr2);
+//kkkkkkkk
