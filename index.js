@@ -204,3 +204,4 @@ console.log(nameArr2);
 
 //ニャーん
 //わんわん
+//java_yoshida
